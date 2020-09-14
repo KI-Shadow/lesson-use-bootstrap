@@ -9,3 +9,7 @@
 .my-side-col {
 	min-height: 100px;
 }
+
+.custom-alert {
+	display: none;
+}
