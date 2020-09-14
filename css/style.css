@@ -4,6 +4,7 @@
 .my-central-col {
 	background-color: #c5f6ff;
 	min-height: 100px;
+	margin-bottom: 100px;
 }
 
 .my-side-col {
@@ -13,7 +14,14 @@
 .custom-alert {
 	display: none;
 	margin-bottom: 100px;
-	position: fixed;
-	left: 10px;
-	bottom: 10px;
+}
+
+.my-central-col-2 {
+	background-color: #5cffba;
+	min-height: 100px;
+	margin-bottom: 100px;
+}
+
+.progress {
+	margin: 20px 0;
 }
