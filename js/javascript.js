@@ -10,6 +10,9 @@ let newprogress = 75;
 
 $('.j-button-2').click(function() {
 	newprogress = $('#exampleInputEmail1').val();
-	console.log(newprogress);
-	$('.j-progress-bar').attr('aria-valuenow', newprogress).css('width', newprogress+'%');
+	if (newprogress >=0 && newprogress <= 100) {
+		$('.j-progress-bar').attr('aria-valuenow', newprogress).css('width', newprogress+'%');
+	} else {
+		alert("Вы ввели некорректное число, задайте число в диапазоне от 0-100.");
+	}
 });
