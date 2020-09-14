@@ -1,0 +1,11 @@
+/*Изменение стилей bootstrap*/
+
+/*Задаю свои стили*/
+.my-central-col {
+	background-color: #c5f6ff;
+	min-height: 100px;
+}
+
+.my-side-col {
+	min-height: 100px;
+}
