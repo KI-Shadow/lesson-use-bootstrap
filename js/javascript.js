@@ -16,3 +16,29 @@ $('.j-button-2').click(function() {
 		alert("Вы ввели некорректное число, задайте число в диапазоне от 0-100.");
 	}
 });
+
+
+let time = 0;
+let nIntervId = null;
+
+function changeTime() {
+  $('.j-time').text(time);
+}
+
+$('.j-start').click(function() {
+  if (!nIntervId) {
+    nIntervId = setInterval(() => {
+      time = time + 1;
+      changeTime();
+    }, 1000); 
+  }
+});
+
+$('.j-end').click(function() {
+  if (nIntervId) {
+    clearInterval(nIntervId);
+    nIntervId = null;
+    time = 0;
+    changeTime();
+  }
+});
