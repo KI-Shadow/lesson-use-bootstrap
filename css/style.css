@@ -32,6 +32,14 @@
 	margin-bottom: 100px;
 }
 
-.body-for-timer {
+.my-central-col-4 {
+	background-color: #ffe870;
+	min-height: 100px;
+	margin-bottom: 100px;
+}
 
+.my-central-col-5 {
+	background-color: #ffa552;
+	min-height: 100px;
+	margin-bottom: 100px;
 }

@@ -42,3 +42,43 @@ $('.j-end').click(function() {
     changeTime();
   }
 });
+
+const maxAllowedChecks = 2; 
+
+function trackChecks() {
+  let checkCount = $("input[type=checkbox]:checked").length;
+  if (checkCount >= maxAllowedChecks) { 
+    $("input[type=checkbox]:not(:checked)").prop("disabled", true);
+  } else {
+    $("input[type=checkbox]:not(:checked)").prop("disabled", false);
+  }
+}
+
+function init1() {
+
+  $("input[type=checkbox]").change(trackChecks); 
+
+  console.log("скрипт подгрузился");
+}
+
+$(document).ready(init1);
+
+
+function trackRadios() {
+  let checkCount = $("input[type=radio]:checked").length;
+  $("input[type=radio]:not(:checked)").prop("disabled", checkCount >= 1);
+}
+
+
+function init() {
+  $("input[type=radio]").change(trackRadios);
+
+  trackRadios(); 
+  console.log("скрипт подгрузился");
+}
+
+$(document).ready(init);
+
+$("#my-carousel").carousel({
+  interval: 625
+})
